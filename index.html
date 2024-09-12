@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БЭМ страница</title>
+</head>
+<body>
+    <!-- block header -->
+    <header class="header">
+        <h1 class="header__title">Давайте повеселимся с БЭМ</h1>
+        <img src="img/vic.jpg" alt="jolly BEM" width="10%" srcset=""> <img src="img/hear.png" width="10%" alt="Ну и...">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="about.html" class="header__menu-link">О крошке БЭМ</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__menu-link">По жизни с БЭМ</a></li>
+                <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Картинка в header -->
+        <figure class="header__image">
+            <img src="img/brain.png" alt="nice girl" width="10%" class="header__img">
+            <figcaption class="header__caption" ><strong>ЕСТЬ КОНТАКТ</strong></figcaption>
+        </figure>
+    </header>
+
+    <!-- Block main -->
+    <main class="main-content">
+        <!-- Блок about -->
+        <section class="about" id="about">
+            <h2 class="about__title">И ЭТО ВСЕ О НЕЙ</h2>
+            <p class="about__text">ЭТО - <strong>БЭМ</strong>, и она - <em>прекрасна</em>. Ее цель - не дать нам сдохнуть от скуки.</p>
+            <img src="img/nice.png" alt="sheis very nice" width="10%"> <img src="img/think.png" width="10%" alt="Oooo">
+            <p class="about__text">Ах, как я люблю <strong>динамичные</strong> интерфейсы.</p>
+
+            <!-- Цитата -->
+            <blockquote class="about__quote">
+                <p>“Не работать ни одного дня в своей жизни!!!” </p> 
+                <cite>— БЭМ</cite>
+            </blockquote>
+
+            <!-- Таблица с навыками -->
+            <p>“Я МОГУ ВСЕ!!!” </p>
+            <table class="about__table">
+                <thead>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Уровень владения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Эксперт</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Продвинутый Эксперт</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>СуперЭксперт</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Блок projects -->
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Иллюзии</h2>
+            <ul class="projects__list">
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Иллюзия №1</h3>
+                    <p class="projects__item-description">Описание. Все коты белые и пушистые</p>
+                    <!-- Кот -->
+                    <pre class="projects__item-code">
+                        <img src="img/cat.svg" width="10%" alt="cat">
+                    </pre>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Иллюзия №2</h3>
+                    <p class="projects__item-description">См. Иллюзию №1.</p>
+                    <!-- Упорядоченный список -->
+                    <ol class="projects__item-steps">
+                        <li>Не верь глазам своим</li>
+                        <li>Никого не слушай</li>
+                        <li>Язык твой - враг твой</li>
+                    </ol>
+                </li>
+
+                </li>
+            </ul>
+        </section>
+
+        <!-- Блок contact -->
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Контакты</h2>
+            <p class="contact__text">Вы не сможете связаться с ней по электронной почте: <a href="mailto:email@example.com" class="contact__link">email@example.com</a></p>
+            <p class="contact__text">Но найдете ее в социальных сетях:</p>
+            <!-- Ссылки на социальные сети -->
+            <ul class="contact__socials">
+                <li class="contact__social-item"><a href="https://twitter.com" target="_blank" class="contact__social-link">Twitter</a></li>
+                <li class="contact__social-item"><a href="https://linkedin.com" target="_blank" class="contact__social-link">LinkedIn</a></li>
+                <li class="contact__social-item"><a href="https://github.com" target="_blank" class="contact__social-link">GitHub</a></li>
+            </ul>
+
+            <!-- Встраивание карты -->
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.6527533013286!2d37.71047807733638!3d55.60805687303097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab1d94aeb8309%3A0xd21a6dd461610044!2sPamyatnik%20Musorke!5e0!3m2!1shr!2sru!4v1726166297014!5m2!1shr!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"></iframe>" 
+            </div>
+        </section>
+    </main>
+
+    <!-- Блок footer -->
+    <footer class="footer">
+        <p class="footer__text">&COPY; 2024 BEM. norules.</p>
+        <!-- Ссылка наверх страницы -->
+        <p><a href="#top" class="footer__link">Наверх</a></p>
+    </footer>
+</body>
+</html>
